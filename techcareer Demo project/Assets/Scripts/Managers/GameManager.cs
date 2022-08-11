@@ -39,10 +39,7 @@ public class GameManager : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            if(EventSystem.current.IsPointerOverGameObject())
-            {
-                return;
-            }
+ 
             isGameStarted = true;
             startMenuPanel.SetActive(false);
             gamePanel.SetActive(true);
